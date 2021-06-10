@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/Nex-Otaku/minimal-filesystem/blob/master/img/logo.png?raw=true" height="100px" />
+    <img src="https://github.com/Nex-Otaku/minimal-filesystem/blob/master/img/logo.png?raw=true" height="200px" />
     <h1 align="center">Minimal Filesystem</h1>
     <h3 align="center">Zero dependency. Small and powerful.</h3>
 </p>
