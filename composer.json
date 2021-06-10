@@ -1,0 +1,30 @@
+{
+    "name": "nex-otaku/minimal-filesystem",
+    "type": "library",
+    "description": "Minimal Filesystem",
+    "keywords": [
+        "file",
+        "filesystem",
+        "fs",
+        "directory",
+        "path"
+    ],
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/nex-otaku/minimal-filesystem",
+        "issues": "https://github.com/nex-otaku/minimal-filesystem/issues"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NexOtaku\\MinimalFilesystem\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
