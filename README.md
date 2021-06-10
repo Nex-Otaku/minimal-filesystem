@@ -13,6 +13,12 @@ The preferred way to install is through [composer](http://getcomposer.org/downlo
 composer require nex-otaku/minimal-filesystem
 ```
 
+**Packagist** allows installation of new packages, including this one, to only Composer version 2. ([see how to upgrade](https://blog.packagist.com/composer-2-0-is-now-available/))
+
+So if you are tied to Composer version 1, you can't install package with the command above.
+
+If it is your case, you can just copy-paste source file to your project. It has no dependencies and should work just fine.
+
 Examples
 -----
 
