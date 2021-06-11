@@ -15,6 +15,15 @@ class Filesystem
             return;
         }
 
+        /**
+         * Permissions are modified by current umask,
+         * so even here provided 777 permissions (0777 octal)
+         * it does not mean that permissions for newly created folder will be 777 (rwx).
+         *
+         * See docs: https://www.php.net/manual/en/function.mkdir.php
+         *
+         * If you want to set specific permissions to folder, call chmod().
+         */
         if (!mkdir($path, 0777, true) && !is_dir($path)) {
             throw new \RuntimeException("Failed to create directory \"{$path}\"");
         }
