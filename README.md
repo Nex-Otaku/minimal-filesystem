@@ -42,7 +42,6 @@ Filesystem commands
 -----
 ### Directories
  - createDirectory
- - createDirectoryForFile
  - getCurrentDirectory
  - existsDirectory
  - isDirectory
