@@ -28,6 +28,9 @@ $fs = new \NexOtaku\MinimalFilesystem\Filesystem();
 // List all files in directory
 var_dump($fs->listFiles('/var/www'));
 
+// Search all TXT files in directory
+var_dump($fs->searchFiles('/var/www', '*.txt'));
+
 // Read file
 echo $fs->readFile('/var/log/my-app.log');
 
