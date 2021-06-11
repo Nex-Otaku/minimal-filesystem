@@ -26,3 +26,8 @@
       - listFiles
       - searchFiles
       - searchFilesRecursively
+
+## 2.0.0
+
+- Moved method "createDirectoryForFile" from public to private space
+- Removed "umask" call to simplify directory management
