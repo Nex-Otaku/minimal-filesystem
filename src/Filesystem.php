@@ -29,12 +29,6 @@ class Filesystem
         }
     }
 
-    public function createDirectoryForFile(string $filePath): void
-    {
-        $dirname = dirname($filePath);
-        $this->createDirectory($dirname);
-    }
-
     public function writeFile(string $filePath, string $content): void
     {
         $this->createDirectoryForFile($filePath);
@@ -53,6 +47,12 @@ class Filesystem
         if ($result === false) {
             throw new \RuntimeException("Failed to append to file \"{$filePath}\"");
         }
+    }
+
+    private function createDirectoryForFile(string $filePath): void
+    {
+        $dirname = dirname($filePath);
+        $this->createDirectory($dirname);
     }
 
     public function isReadableFile(string $path): bool
