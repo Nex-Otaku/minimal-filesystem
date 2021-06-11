@@ -15,14 +15,9 @@ class Filesystem
             return;
         }
 
-        $oldMask = umask(0);
-
         if (!mkdir($path, 0777, true) && !is_dir($path)) {
-            umask($oldMask);
             throw new \RuntimeException("Failed to create directory \"{$path}\"");
         }
-
-        umask($oldMask);
     }
 
     public function createDirectoryForFile(string $filePath): void
